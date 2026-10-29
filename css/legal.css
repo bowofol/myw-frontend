@@ -1,0 +1,116 @@
+/* Draft legal documents share the existing navigation, colours and typography. */
+.legal-main {
+  max-width: 900px;
+  padding-block: 58px 72px;
+  overflow-wrap: anywhere;
+}
+.legal-heading {
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+.legal-heading h1 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin: 0 0 16px;
+}
+.legal-heading h1 em {
+  font-style: normal;
+  color: var(--green);
+}
+.legal-heading > p:last-child {
+  color: #526958;
+  font-size: 16px;
+}
+.legal-draft {
+  border: 1px solid #a9c3ae;
+  border-left: 4px solid var(--green);
+  border-radius: 7px;
+  background: #edf3e9;
+  padding: 20px 24px;
+  margin-bottom: 28px;
+}
+.legal-draft h2 {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 1.4;
+}
+.legal-draft p {
+  margin: 0;
+}
+.legal-contents {
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fff;
+}
+.legal-contents ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 28px;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+.legal-contents a,
+.legal-document a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--green-dark);
+}
+.legal-contents a {
+  display: inline-block;
+  padding-block: 4px;
+}
+.legal-document {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.legal-document section {
+  padding-top: 32px;
+  scroll-margin-top: 100px;
+}
+.legal-document h2 {
+  font-family: var(--font-display);
+  font-size: 23px;
+  line-height: 1.4;
+  letter-spacing: -0.4px;
+  margin: 0 0 12px;
+}
+.legal-document p {
+  margin: 12px 0;
+}
+.legal-document ul {
+  padding-left: 24px;
+}
+.legal-document li {
+  margin-block: 12px;
+}
+.legal-approval {
+  background: #edf3e9;
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+@media (max-width: 680px) {
+  .legal-main {
+    padding-block: 34px 48px;
+  }
+  .legal-draft,
+  .legal-contents {
+    padding: 18px 16px;
+  }
+  .legal-contents ul {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .legal-document h2 {
+    font-size: 21px;
+  }
+  .legal-document section {
+    scroll-margin-top: 84px;
+  }
+  .legal-approval {
+    padding: 14px 16px;
+  }
+}

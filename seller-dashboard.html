@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="List items with Newpage Material Managers and track their marketplace review and publication status."
+    />
+    <title>Item dashboard — Newpage Material Managers</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/branding/favicon-16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/branding/favicon-32.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/branding/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/branding/favicon-180.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/marketplace.css" />
+    <link rel="stylesheet" href="css/seller.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/auth-ui.js" defer></script>
+    <script type="module" src="js/seller-app.js"></script>
+  </head>
+  <body data-seller-page="dashboard" class="seller-page seller-edit">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Newpage Material Managers home"
+          ><img
+            class="brand-symbol"
+            src="assets/branding/newpage-symbol.png"
+            width="256"
+            height="169"
+            alt="Newpage Material Managers NMM symbol"
+          /><span class="brand-name"
+            >Newpage <span class="brand-light">Material</span> Managers</span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <span class="seller-toolbar-label">Seller workspace</span><a class="seller-toolbar-market" href="marketplace.html">Explore marketplace <span aria-hidden="true">&#8599;</span></a>
+
+      </nav>
+    </header>
+    <noscript><section class="seller-noscript container"><h1>Your seller studio.</h1><p>Enable JavaScript to verify your account and manage listings. Account information stays protected. You can also <a href="login.html">sign in</a> or <a href="index.html#contact">contact Newpage</a> for help.</p></section></noscript>
+    <aside class="nav-links seller-sidebar" id="nav-links" aria-label="Seller navigation">
+      <div class="seller-sidebar-brand"><a class="brand" href="index.html" aria-label="Newpage home"><img class="brand-symbol" src="assets/branding/newpage-symbol.png" width="256" height="169" alt="Newpage official symbol"><span class="brand-name">Newpage<span class="seller-brand-caption">MATERIAL MANAGERS</span></span></a><button type="button" class="seller-sidebar-close" data-sidebar-close aria-label="Close seller menu">&#215;</button></div>
+      <p class="seller-sidebar-label">YOUR WORKSPACE</p>
+      <nav class="seller-section-nav" aria-label="Seller sections">
+        <a href="#main" data-seller-section="main" aria-current="location"><span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>Dashboard</a>
+        <a href="#seller-listings" data-seller-section="seller-listings"><span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>My listings</a>
+        <a href="#item-submission" data-seller-section="item-submission"><span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16M4 12h16"/></svg></span>List an item</a>
+        <a href="#seller-profile" data-seller-section="seller-profile"><span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>Profile / account</a>
+      </nav>
+      <a class="seller-market-link" href="marketplace.html">Visit marketplace <span aria-hidden="true">&#8599;</span></a>
+      <div class="seller-sidebar-note"><p>GOOD THINGS.<br>ANOTHER CHAPTER.</p><small>Your items, thoughtfully managed by Newpage.</small></div>
+      <a href="login.html" data-auth-guest hidden>Sign in</a><a href="register.html" data-auth-guest hidden>Create account</a>
+    </aside>
+    <div class="seller-sidebar-backdrop" data-sidebar-backdrop hidden></div>
+    <main
+      hidden
+      data-auth-protected="seller"
+      id="main"
+      class="seller-main container dashboard-main"
+    >
+      <div class="backend-notice" data-backend-notice role="status">
+        Checking seller access…
+      </div>
+      <section class="dashboard-heading">
+        <div>
+          <p class="eyebrow">YOUR SELLER STUDIO</p>
+          <h1>Welcome back, <em data-seller-name>User</em></h1>
+          <p>
+            Submit items for a possible purchase by Newpage and follow their
+            review and resale status in one place.
+          </p>
+        </div>
+        <button
+          class="button add-item-button"
+          type="button"
+          data-open-item-form
+          disabled
+          title="Checking seller access"
+        >
+          List an item <span>↗</span>
+        </button>
+      </section>
+
+      <div class="seller-overview" aria-label="Listing overview">        <div class="listing-status-summary" data-listing-summary hidden>
+          <button type="button" data-listing-filter="all">
+            <span>All listings</span
+            ><strong data-listing-count="all">0</strong></button
+          ><button type="button" data-listing-filter="pending">
+            <span>Pending</span
+            ><strong data-listing-count="pending">0</strong></button
+          ><button type="button" data-listing-filter="approved" hidden>
+            <span>Approved</span
+            ><strong data-listing-count="approved">0</strong></button
+          ><button type="button" data-listing-filter="published">
+            <span>Published</span
+            ><strong data-listing-count="published">0</strong></button
+          ><button type="button" data-listing-filter="rejected" hidden>
+            <span>Rejected</span
+            ><strong data-listing-count="rejected">0</strong></button
+          ><button type="button" data-listing-filter="sold">
+            <span>Sold</span><strong data-listing-count="sold">0</strong>
+          </button>
+        </div><p class="seller-count-note">Counts reflect your loaded listings.</p></div>
+      <section
+        class="item-submission-panel"
+        id="item-submission"
+        aria-labelledby="item-submission-title"
+        hidden
+      >
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">A NEW CHAPTER STARTS HERE</p>
+            <h2 id="item-submission-title">List your item</h2>
+          </div>
+          <button
+            type="button"
+            class="panel-dismiss"
+            data-close-item-form
+            aria-label="Close item submission form"
+          >
+            ×
+          </button>
+        </div>
+        <p class="seller-form-intro">
+          Give us enough information to evaluate a possible purchase. Submission
+          does not guarantee purchase. Your contact details and expected amount
+          stay private to you and the Newpage team. Product photos become public
+          only after the item is acquired and published.
+        </p>
+        <form id="item-submission-form" novalidate>
+          <fieldset class="submission-form-grid"><legend>01 / Item details</legend>
+            <div class="field">
+              <label for="item-title">Item name</label
+              ><input
+                id="item-title"
+                name="title"
+                required
+                minlength="2"
+                maxlength="120"
+                placeholder="e.g. Wooden dining table"
+              />
+            </div>
+            <div class="field">
+              <label for="item-category">Category</label
+              ><select id="item-category" name="category" required>
+                <option value="" selected disabled>Select a category</option>
+                <option>Electronics</option>
+                <option>Furniture</option>
+                <option>Home &amp; Kitchen</option>
+                <option>Clothing</option>
+                <option>Books</option>
+                <option>Other Items</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="item-condition">Condition</label
+              ><select id="item-condition" name="condition" required>
+                <option value="" selected disabled>Select condition</option>
+                <option>Like new</option>
+                <option>Very good</option>
+                <option>Good</option>
+                <option>Fair</option>
+                <option>Poor</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="item-location">Item location</label
+              ><input
+                id="item-location"
+                name="location"
+                required
+                minlength="2"
+                maxlength="120"
+                autocomplete="address-level2"
+                placeholder="e.g. Wuse 2, Abuja"
+              />
+            </div>
+            <div class="field field-full">
+              <label for="item-description">Description</label
+              ><textarea
+                id="item-description"
+                name="description"
+                rows="5"
+                required
+                minlength="20"
+                maxlength="2000"
+                placeholder="Describe the item, its condition, and anything our team should know."
+              ></textarea
+              ><small class="field-hint">At least 20 characters.</small>
+            </div>
+            </fieldset>
+          <fieldset class="submission-form-grid"><legend>02 / Your contact</legend><p class="submission-group-intro field-full">Your account details stay private to you and the Newpage team.</p>
+            <div class="field">
+              <label for="item-contact-name">Contact name</label
+              ><input
+                id="item-contact-name"
+                name="contactName"
+                required
+                minlength="2"
+                maxlength="120"
+                autocomplete="name"
+              />
+            </div>
+            <div class="field">
+              <label for="item-contact-phone">Phone / WhatsApp</label
+              ><input
+                id="item-contact-phone"
+                name="contactPhone"
+                type="tel"
+                required
+                minlength="7"
+                maxlength="40"
+                autocomplete="tel"
+                placeholder="Your phone number"
+              />
+            </div>
+            <div class="field field-full">
+              <label for="item-contact-email">Contact email</label
+              ><input
+                id="item-contact-email"
+                name="contactEmail"
+                type="email"
+                required
+                maxlength="254"
+                autocomplete="email"
+              />
+            </div>
+            </fieldset>
+          <fieldset class="submission-form-grid"><legend>03 / Your expected amount</legend><p class="submission-group-intro field-full">A starting point for review and negotiation, never the public marketplace rate.</p>
+            <div class="field">
+              <label for="item-expected-rate"
+                >Expected rate
+                <span class="field-optional">(required)</span></label
+              ><input
+                id="item-expected-rate"
+                name="sellerExpectedRate"
+                type="number"
+                min="0"
+                max="9999999999.99"
+                step="0.01"
+                required
+                inputmode="numeric"
+                placeholder="Your expected amount"
+              /><small class="field-hint"
+                >Required for review. This private expected amount is a starting
+                point for negotiation, not an agreed purchase amount or public
+                Rate.</small
+              >
+            </div>
+            </fieldset>
+          <fieldset class="submission-form-grid"><legend>04 / Show us your item</legend><p class="submission-group-intro field-full">Clear photographs help our team understand its condition.</p>
+            <div class="field field-full">
+              <label for="item-photos">Clear photos</label
+              ><input
+                id="item-photos"
+                name="photos"
+                type="file"
+                accept="image/jpeg,image/png,image/webp"
+                multiple
+                required
+                aria-describedby="item-photos-hint"
+              /><small id="item-photos-hint" class="field-hint"
+                >Add 1–6 clear photos. JPEG, PNG or WebP; maximum 5 MB
+                each.</small
+              >
+              <p class="seller-preview-summary" data-photo-summary aria-live="polite">No photos selected.</p><div class="seller-photo-previews" data-photo-previews role="list" aria-label="Selected photo previews"></div>
+            </div>
+          </fieldset>
+          <div class="submission-actions">
+            <button class="button seller-submit" type="submit">
+              Submit for review <span>↗</span>
+            </button>
+            <p
+              class="seller-message"
+              id="item-submission-message"
+              aria-live="polite"
+            ></p>
+          </div>
+        </form>
+      </section>
+      <div class="seller-content-grid">
+      <section id="seller-listings" class="listings-panel" aria-labelledby="listings-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Your activity</p>
+            <h2 id="listings-title">My listings</h2>
+          </div>
+          <button
+            class="button button-small button-outline"
+            type="button"
+            data-listings-refresh
+            disabled
+          >
+            Refresh
+          </button>
+        </div>
+
+        <p class="dashboard-loading" data-listings-state>
+          Loading your submitted products...
+        </p>
+        <div class="seller-listings" data-seller-listings></div>
+        <button
+          class="button button-small button-outline"
+          type="button"
+          data-listings-more
+          hidden
+        >
+          Load more
+        </button>
+      </section>
+      <div class="seller-account-column">
+      <section class="profile-panel" id="seller-profile" aria-labelledby="profile-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Your account</p>
+            <h2 id="profile-title">Profile information</h2>
+          </div>
+        </div>
+        <dl class="profile-grid">
+          <div>
+            <dt>Full name</dt>
+            <dd data-profile-name>—</dd>
+          </div>
+          <div>
+            <dt>Email address</dt>
+            <dd data-profile-email>—</dd>
+          </div>
+          <div>
+            <dt>Phone number</dt>
+            <dd data-profile-phone>—</dd>
+          </div>
+        </dl>
+      </section>
+      <section class="seller-process" aria-labelledby="seller-process-title">
+        <div><p class="eyebrow">THE NEWPAGE WAY</p><h2 id="seller-process-title">Four steps.<br />One new chapter.</h2></div>
+        <ol><li><span aria-hidden="true">01</span><div><h3>Submit your item.</h3><p>Tell us about it and add clear photographs.</p></div></li><li><span aria-hidden="true">02</span><div><h3>We review the details.</h3><p>Newpage considers the item for a possible purchase.</p></div></li><li><span aria-hidden="true">03</span><div><h3>We talk and agree.</h3><p>Our team contacts you for valuation and negotiation.</p></div></li><li><span aria-hidden="true">04</span><div><h3>A new chapter begins.</h3><p>Newpage purchases approved items by agreement.</p></div></li></ol>
+      </section>
+      <p class="approval-reminder">
+        Every submission begins as <strong>Pending Review</strong> and does not
+        guarantee purchase. Newpage evaluates the item and negotiates a purchase
+        amount with you. You arrange to bring the item to Newpage; payment
+        method and timing are agreed individually. Admin publishes acquired
+        items for resale at a public Rate.
+      </p>
+      </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-logo-row">
+          <a
+            class="brand brand-footer"
+            href="index.html"
+            aria-label="Newpage Material Managers home"
+            ><img
+              class="brand-logo"
+              src="assets/branding/newpage-logo.png"
+              width="1254"
+              height="1254"
+              alt="Newpage Material Managers official logo"
+              loading="lazy"
+            /><span class="brand-name"
+              >Newpage <span class="brand-light">Material</span> Managers</span
+            ></a
+          >
+        </div>
+        <nav class="footer-legal" aria-label="Legal documents">
+          <a href="privacy-policy.html">Privacy Policy (Draft)</a
+          ><a href="terms-and-conditions.html"
+            >Terms &amp; Conditions (Draft)</a
+          >
+        </nav>
+        <div class="footer-bottom">
+          <span>© 2026 Newpage Material Managers</span
+          ><a href="marketplace.html">Return to marketplace</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

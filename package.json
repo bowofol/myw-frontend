@@ -1,0 +1,13 @@
+{
+  "name": "newpage-material-managers-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Newpage Material Managers HTML, CSS and JavaScript frontend",
+  "scripts": {
+    "start": "node ../myw-backend/scripts/dev-frontend.js",
+    "test": "node --test --test-concurrency=1 ../tests/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

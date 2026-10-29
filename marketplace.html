@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Browse published reusable goods and pre-loved products in Abuja."
+    />
+    <title>Marketplace — Newpage Material Managers</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/branding/favicon-16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/branding/favicon-32.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/branding/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/branding/favicon-180.png"
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/marketplace.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/marketplace.js"></script>
+    <script src="js/auth-ui.js" defer></script>
+  </head>
+  <body class="market-page market-edit">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Newpage Material Managers home"
+          ><img
+            class="brand-symbol"
+            src="assets/branding/newpage-symbol.png"
+            width="256"
+            height="169"
+            alt="Newpage Material Managers NMM symbol"
+          /><span class="brand-name"
+            >Newpage <span class="brand-light">Material</span> Managers</span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a
+          ><a class="current" href="marketplace.html" aria-current="page"
+            >Marketplace</a
+          ><a href="index.html#how-it-works">How it works</a
+          ><a href="index.html#contact">Contact</a
+          ><a href="login.html" data-auth-guest hidden>Seller sign in</a
+          ><a
+            class="button button-small"
+            href="register.html"
+            data-auth-guest
+            hidden
+            >List an item <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="market-intro market-editorial" aria-labelledby="market-title">
+        <div class="container market-editorial-copy">
+          <div><p class="market-kicker">THE NEWPAGE MARKETPLACE / ABUJA</p>
+            <h1 id="market-title">Not everything valuable has to be new.</h1></div>
+          <div class="market-editorial-aside"><p>Explore thoughtfully selected materials ready for another chapter.</p><a href="#browse" class="market-text-link">Discover the available edit <span aria-hidden="true">&#8600;</span></a></div>
+        </div>
+        <figure class="market-editorial-scene">
+          <picture>
+            <source media="(max-width: 639px)" srcset="https://images.unsplash.com/photo-1774095120121-e2fcb529cc2b?auto=format&amp;fit=crop&amp;q=82&amp;w=480&amp;rect=1100,500,2000,1500 480w, https://images.unsplash.com/photo-1774095120121-e2fcb529cc2b?auto=format&amp;fit=crop&amp;q=82&amp;w=860&amp;rect=1100,500,2000,1500 860w" sizes="100vw" width="2000" height="1500" />
+            <img id="market-editorial-image" src="https://images.unsplash.com/photo-1774095120121-e2fcb529cc2b?auto=format&amp;fit=crop&amp;q=82&amp;w=1920&amp;rect=0,350,3400,1400" srcset="https://images.unsplash.com/photo-1774095120121-e2fcb529cc2b?auto=format&amp;fit=crop&amp;q=82&amp;w=1280&amp;rect=0,350,3400,1400 1280w, https://images.unsplash.com/photo-1774095120121-e2fcb529cc2b?auto=format&amp;fit=crop&amp;q=82&amp;w=1920&amp;rect=0,350,3400,1400 1920w, https://images.unsplash.com/photo-1774095120121-e2fcb529cc2b?auto=format&amp;fit=crop&amp;q=82&amp;w=2880&amp;rect=0,350,3400,1400 2880w" sizes="100vw" width="3400" height="1400" alt="Warm timber dining chairs and cream seating in a naturally lit sunroom. Editorial inspiration, not marketplace inventory." fetchpriority="high" decoding="async" />
+          </picture>
+          <p class="market-photo-fallback" hidden>Editorial photograph unavailable. Explore actual published items below.</p>
+          <figcaption class="container"><span>EDITORIAL INSPIRATION. NOT MARKETPLACE INVENTORY.</span><span>Photo: <a href="https://unsplash.com/photos/modern-living-room-with-fireplace-and-large-windows-3qaMytIyx0c">Clay Banks / Unsplash</a> &middot; <a href="https://unsplash.com/license">License</a></span></figcaption>
+        </figure>
+      </section>
+      <section class="listing-section market-discovery" id="browse" aria-labelledby="browse-title">
+        <div class="container">
+          <div class="market-discovery-heading" data-market-reveal><div><p class="market-kicker">01 / THE AVAILABLE EDIT</p><h2 id="browse-title">A good find.<br /><span>A fresh start.</span></h2></div><p data-marketplace-notice>Acquired by Newpage. Published for resale.<br />Enquire directly with our team about an available item.</p></div>
+          <noscript><style>.market-edit :is(#market-search,.market-categories,.results-toolbar,.market-inventory){display:none!important}</style><div class="market-noscript"><h3>Explore with Newpage.</h3><p>Live listings, search and filters need JavaScript. Enable it to see published inventory, or <a href="index.html#contact">contact Newpage</a> for help.</p></div></noscript>
+          <form class="market-search" id="market-search" role="search">
+            <label class="sr-only" for="listing-search">Search product name or description</label>
+            <span aria-hidden="true">&#9906;</span><input id="listing-search" name="q" type="search" maxlength="100" placeholder="Search name or description" />
+            <button class="clear-search" id="clear-search" type="button" hidden>Clear</button>
+            <button class="button" type="submit">Search <span aria-hidden="true">&#8599;</span></button>
+          </form>
+          <fieldset class="market-categories"><legend>Browse by category</legend><div id="category-options" class="category-options"></div></fieldset>
+          <div class="results-toolbar market-results-heading"><div><p id="results-count" aria-live="polite">Loading...</p><p id="active-filters">All categories</p></div><div class="market-results-actions"><button type="button" id="reset-filters" class="reset-button" hidden>Clear filters <span aria-hidden="true">&#215;</span></button><p class="market-sort-label">Newest first</p></div></div>
+          <div class="market-inventory" data-state="loading">
+            <p class="form-note" id="marketplace-state" role="status">Loading published products...</p>
+            <button class="button button-outline button-small" id="marketplace-retry" type="button" hidden>Retry</button>
+            <div class="product-grid market-products" id="product-grid" aria-live="polite" aria-busy="true"></div>
+            <div class="empty-state" id="empty-state" hidden>
+              <p class="market-kicker" aria-hidden="true">ROOM FOR WHAT COMES NEXT</p><h3 id="empty-title">A new chapter is on its way.</h3><p id="empty-description">There are no published items available right now. Check back as Newpage adds acquired items for resale.</p>
+              <button class="button button-outline" type="button" id="empty-reset" hidden>Clear search and filters</button><a class="market-text-link" href="index.html#contact">Talk to Newpage <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </div>
+          <nav class="results-toolbar market-pagination" id="marketplace-pagination" aria-label="Marketplace pages" hidden><button class="button button-outline button-small" id="previous-page" type="button">Previous <span aria-hidden="true">&#8592;</span></button><span id="current-page"></span><button class="button button-outline button-small" id="next-page" type="button">Next <span aria-hidden="true">&#8594;</span></button></nav>
+          <p class="market-availability-note">Rates and availability are shown for published items. Enquire with Newpage to confirm purchase arrangements.</p>
+        </div>
+      </section>
+      <aside class="market-seller" id="sell-note" aria-labelledby="market-seller-title">
+        <div class="container" data-market-reveal><div><p class="market-kicker">02 / FOR WHAT COMES NEXT</p><h2 id="market-seller-title">Every material has another chapter.</h2></div><div class="market-seller-copy"><p>Submit useful materials for Newpage to review and value. Our team will discuss a possible purchase if your item is suitable. Submission does not guarantee purchase.</p><a class="market-seller-action" href="register.html" data-market-seller-guest hidden>Start with a seller account <span aria-hidden="true">&#8599;</span></a><a class="market-seller-action" href="seller-dashboard.html" data-market-seller-active hidden>Submit an item <span aria-hidden="true">&#8599;</span></a><a class="market-seller-action" href="index.html#contact" data-market-seller-contact hidden>Talk to Newpage <span aria-hidden="true">&#8599;</span></a><noscript><a class="market-seller-action" href="register.html">Create a seller account <span aria-hidden="true">&#8599;</span></a></noscript><p class="market-seller-note">You sell to Newpage. Buyers buy from Newpage.</p></div></div>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="brand brand-footer" href="index.html"
+              ><img
+                class="brand-logo"
+                src="assets/branding/newpage-logo.png"
+                width="1254"
+                height="1254"
+                alt="Newpage Material Managers official logo"
+                loading="lazy"
+              /><span class="brand-name"
+                >Newpage
+                <span class="brand-light">Material</span> Managers</span
+              ></a
+            >
+            <p>
+              A more thoughtful way to give useful materials a next chapter.
+            </p>
+            <span class="footer-location"
+              >Made for Abuja, Nigeria <span>✳</span></span
+            >
+          </div>
+          <div class="footer-links">
+            <div>
+              <h3>Explore</h3>
+              <a href="index.html">Home</a
+              ><a href="marketplace.html">Marketplace</a
+              ><a href="index.html#how-it-works">How it works</a>
+            </div>
+            <div>
+              <h3>About</h3>
+              <a href="index.html#mission">Our mission</a
+              ><a href="index.html#contact">Contact us</a>
+            </div>
+          </div>
+          <a class="back-top" href="#main" aria-label="Back to top">↑</a>
+        </div>
+        <nav class="footer-legal" aria-label="Legal documents">
+          <a href="privacy-policy.html">Privacy Policy (Draft)</a
+          ><a href="terms-and-conditions.html"
+            >Terms &amp; Conditions (Draft)</a
+          >
+        </nav>
+        <div class="footer-bottom">
+          <span>© 2026 Newpage Material Managers</span
+          ><span>Useful materials deserve another life. <i>✳</i></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
